@@ -15,7 +15,7 @@
 [김태영](https://github.com/kimtaeyoung201910794) | 프론트엔드
 신민경 | 기획/디자인
 [이서연](https://github.com/olsy1128) | 프론트엔드
-이현우 | 
+이현우 | 백엔드
 <br>
 
 ### 회의록 및 각종 산출물
