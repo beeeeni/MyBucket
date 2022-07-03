@@ -11,7 +11,7 @@
 팀원   |          역할 
 ------ | -------------
 [박현빈](https://github.com/beeeeni) | 팀장, 백엔드
-김재완 | 프론트엔드
+[김재완](https://github.com/wodhksgd) | 프론트엔드
 [김태영](https://github.com/kimtaeyoung201910794) | 프론트엔드
 신민경 | 기획/디자인
 [이서연](https://github.com/olsy1128) | 프론트엔드
