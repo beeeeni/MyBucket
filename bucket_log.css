@@ -56,66 +56,208 @@
 h2{
     margin-left: 3%;
     margin-top: 1.5%;
-    border-bottom: 1px solid #117e74;
+    border-bottom: 0.05em solid #117e74;
     width: 93%
 }
 .best_list{
     margin-left: 3%;
     margin-top: 0.5%;
-    border-bottom: 1px solid #117e74;
+    border-bottom: 0.05em solid rgba(17, 126, 115, 0.845);
     width: 93%
 }
 /* 태그 버튼 */
-.tag-button{
+.tag{
     display: flex;
+}
+.tag-button{
     margin-top: 2%;
     width: auto;
     height: auto;
-    padding: 1%;
-    border-radius: 2vw;
-    border: #117e74;
-    border-style: solid;
-	display: inline-block;
-	cursor: pointer;
-
-    font-size: 2.5vmin;
-    
+    padding: 1%;    
 }
 #adventure{
-    margin-left: 20%;
+    margin-left: 7%;
 }
 #travel{
-    margin-left: 3%;
+    margin-left: 0.5%;
 }
 #enjoy{
-    margin-left: 3%;
+    margin-left: 0.5%;
 }
 #challenge{
-    margin-left: 3%;
+    margin-left: 0.5%;
 }
 #selfimprove{
-    margin-left: 3%;
+    margin-left: 0.5%;
 }
 #creative{
-    margin-left: 3%;
+    margin-left: 0.5%;
 }
+
+
 /* 태그 리뷰 */
-.tag_review{
+.tag_list{
     display: flex;
-    float: left;
-    margin-top: 5%;
-    margin-left: 10%;
-    border: #117e74;
-    border-style: solid;
-    border-radius: 2vw;
+    margin-left: 7%;
     padding: 1.5%;
 }
 
-.review > li{
-    display: inline-block;
+.tag_explain{
     position: relative;
+    margin: 0 auto;
+
+    top: 0%;
+    width: 100%;
+    height: 83%;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.review > li > span{
-    position:absolute; bottom:0; left:50%; color:#666; line-height:1.462em; white-space:nowrap; transform:translate(-50%, 0)
+.tag_img{
+    display: block;
+    margin: 8% auto;
+}
+
+.tag_title{
+    text-align: center;
+    font-size: 1rem;
+    color: white;
+    margin: 5%;
+}
+
+.tag_sub{
+    text-align: center;
+    font-size: 0.8rem;
+    color: white;
+    margin: 5%;
+}
+
+.etc{
+    display: block;
+    font-size: 0;
+}
+
+.stb{
+    font-size: 0.5rem;
+    text-align: center;
+    background-color: white;
+    width: 25%;
+    border-radius: 1.5vw;
+    margin: 4%;
+    float:left
+}
+
+.hour{
+    font-size: 0.5rem;
+    color: gray;
+    float: right;
+    margin-top: 1vh;
+    margin-right: 5%;
+}
+
+.tlist1{
+    border-radius: 2vw;
+    border: solid #04D9C3;
+    margin: 1% 1%;
+    width: 14%;
+    height: 50%;
+    box-sizing: border-box;
+    margin-left: 3%;
+}
+
+#tag_ex1{
+    border-radius: 0px 0px 1.85vw 1.85vw;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 50%;
+    box-sizing: border-box;
+    background-color: #04D9C3;
+}
+
+.tlist2{
+    border-radius: 2vw;
+    border: solid #04D9C3;
+    margin: 1% 1%;
+    width: 14%;
+    height: 50%;
+    box-sizing: border-box;
+    margin-left: 3%;
+}
+
+#tag_ex2{
+    border-radius: 0px 0px 1.85vw 1.85vw;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 50%;
+    box-sizing: border-box;
+    background-color: #04D9C3;
+}
+
+.tlist3{
+    border-radius: 2vw;
+    border: solid #04D9C3;
+    margin: 1% 1%;
+    width: 14%;
+    height: 50%;
+    box-sizing: border-box;
+    margin-left: 3%;
+}
+
+#tag_ex3{
+    border-radius: 0px 0px 1.85vw 1.85vw;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 50%;
+    box-sizing: border-box;
+    background-color: #04D9C3;
+}
+
+.tlist4{
+    border-radius: 2vw;
+    border: solid #04D9C3;
+    margin: 1% 1%;
+    width: 14%;
+    height: 50%;
+    box-sizing: border-box;
+    margin-left: 3%;
+}
+
+#tag_ex4{
+    border-radius: 0px 0px 1.85vw 1.85vw;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 50%;
+    box-sizing: border-box;
+    background-color: #04D9C3;
+}
+
+.tlist5{
+    border-radius: 2vw;
+    border: solid #04D9C3;
+    margin: 1% 1%;
+    width: 14%;
+    height: 50%;
+    box-sizing: border-box;
+    margin-left: 3%;
+}
+
+#tag_ex5{
+    border-radius: 0px 0px 1.85vw 1.85vw;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 50%;
+    box-sizing: border-box;
+    background-color: #04D9C3;
 }
