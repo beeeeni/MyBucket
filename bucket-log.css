@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+} 
+
+/* 상단 메뉴 바*/
+.menu{
+    margin: 0 auto;
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+ 
+.tab-button{
+    padding: 1% 0% 1% 20px;
+    float:left;
+    margin-right:6%;
+    margin-top: 2%;
+    color: grey;
+    text-decoration: none;
+    cursor: pointer;
+}
+ 
+.list{
+    letter-spacing: 1.5rem;
+    position:absolute;
+}
+
+.logo{
+    margin-left: 3%;
+    margin-right: 1%;
+    margin-top: 2%;
+}
+
+
+#main-button{
+    font-size: 1.5rem;
+}
+
+/* 버킷로그페이지 */
+/* 버킷로그란? */
+.explain{
+    background-color: #94f2e9;
+    width: auto;
+    height: 25vh;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 2%;
+}
+/* 인기글 */
+h2{
+    margin-left: 3%;
+    margin-top: 1.5%;
+    border-bottom: 1px solid #117e74;
+    width: 93%
+}
+p{
+    margin-left: 3%;
+    margin-top: 0.5%;
+    border-bottom: 1px solid #117e74;
+    width: 93%
+}
