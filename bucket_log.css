@@ -59,7 +59,7 @@ h2{
     border-bottom: 1px solid #117e74;
     width: 93%
 }
-p{
+.best_list{
     margin-left: 3%;
     margin-top: 0.5%;
     border-bottom: 1px solid #117e74;
@@ -68,20 +68,54 @@ p{
 /* 태그 버튼 */
 .tag-button{
     display: flex;
-    margin-top: 1.5%;
+    margin-top: 2%;
     width: auto;
-    height: 48px;
-    margin-left: 5%;
-    padding-left: 4%;
-    border-radius:3vw;
+    height: auto;
+    padding: 1%;
+    border-radius: 2vw;
     border: #117e74;
     border-style: solid;
-	display:inline-block;
-	cursor:pointer;
+	display: inline-block;
+	cursor: pointer;
 
     font-size: 2.5vmin;
     
 }
+#adventure{
+    margin-left: 20%;
+}
+#travel{
+    margin-left: 3%;
+}
+#enjoy{
+    margin-left: 3%;
+}
+#challenge{
+    margin-left: 3%;
+}
+#selfimprove{
+    margin-left: 3%;
+}
+#creative{
+    margin-left: 3%;
+}
+/* 태그 리뷰 */
+.tag_review{
+    display: flex;
+    float: left;
+    margin-top: 5%;
+    margin-left: 10%;
+    border: #117e74;
+    border-style: solid;
+    border-radius: 2vw;
+    padding: 1.5%;
+}
 
+.review > li{
+    display: inline-block;
+    position: relative;
+}
 
-
+.review > li > span{
+    position:absolute; bottom:0; left:50%; color:#666; line-height:1.462em; white-space:nowrap; transform:translate(-50%, 0)
+}
