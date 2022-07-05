@@ -98,17 +98,16 @@ h2{
 /* 태그 리뷰 */
 .tag_list{
     display: flex;
-    margin-left: 7%;
+    margin-left: 5%;
     padding: 1.5%;
 }
 
 .tag_explain{
-    position: relative;
     margin: 0 auto;
 
     top: 0%;
     width: 100%;
-    height: 83%;
+    height: 87%;
     margin: 0;
     display: flex;
     flex-wrap: wrap;
@@ -161,10 +160,7 @@ h2{
     border-radius: 2vw;
     border: solid #04D9C3;
     margin: 1% 1%;
-    width: 14%;
-    height: 50%;
-    box-sizing: border-box;
-    margin-left: 3%;
+    width: 18%;
 }
 
 #tag_ex1{
@@ -182,10 +178,8 @@ h2{
     border-radius: 2vw;
     border: solid #04D9C3;
     margin: 1% 1%;
-    width: 14%;
-    height: 50%;
-    box-sizing: border-box;
-    margin-left: 3%;
+    width: 18%;
+    margin-left: 5%;
 }
 
 #tag_ex2{
@@ -203,10 +197,8 @@ h2{
     border-radius: 2vw;
     border: solid #04D9C3;
     margin: 1% 1%;
-    width: 14%;
-    height: 50%;
-    box-sizing: border-box;
-    margin-left: 3%;
+    width: 18%;
+    margin-left: 5%;
 }
 
 #tag_ex3{
@@ -224,34 +216,11 @@ h2{
     border-radius: 2vw;
     border: solid #04D9C3;
     margin: 1% 1%;
-    width: 14%;
-    height: 50%;
-    box-sizing: border-box;
-    margin-left: 3%;
+    width: 18%;
+    margin-left: 5%;
 }
 
 #tag_ex4{
-    border-radius: 0px 0px 1.85vw 1.85vw;
-    border: 0;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    height: 50%;
-    box-sizing: border-box;
-    background-color: #04D9C3;
-}
-
-.tlist5{
-    border-radius: 2vw;
-    border: solid #04D9C3;
-    margin: 1% 1%;
-    width: 14%;
-    height: 50%;
-    box-sizing: border-box;
-    margin-left: 3%;
-}
-
-#tag_ex5{
     border-radius: 0px 0px 1.85vw 1.85vw;
     border: 0;
     padding: 0;
