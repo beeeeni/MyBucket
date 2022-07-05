@@ -83,19 +83,19 @@
 }
 
 /* 팔로우 하는 사람의 글 카드로 미리보기 보여주기 */
-.tag_list1{
+.follow_list1{
     display: flex;
     margin-left: 5%;
     padding: 1.5%;
 }
 
-.tag_list2{
+.follow_list2{
     display: flex;
     margin-left: 5%;
     padding: 1.5%;
 }
 
-.tag_explain{
+.follow_explain{
     margin: 0 auto;
 
     top: 0%;
@@ -107,19 +107,19 @@
     justify-content: space-around;
 }
 
-.tag_img{
+.follow_img{
     display: block;
     margin: 8% auto;
 }
 
-.tag_title{
+.follow_title{
     text-align: center;
     font-size: 1rem;
     color: white;
     margin: 5%;
 }
 
-.tag_sub{
+.follow_sub{
     text-align: center;
     font-size: 0.8rem;
     color: white;
@@ -149,13 +149,13 @@
     margin-right: 5%;
 }
 
-.tlist1{
+.flist1{
     border-radius: 2vw;
     border: solid #04D9C3;
     margin: 1% 1%;
     width: 18%;
 }
-#tag_ex1{
+#follow_ex1{
     border-radius: 0px 0px 1.85vw 1.85vw;
     border: 0;
     padding: 0;
@@ -166,14 +166,14 @@
     background-color: #04D9C3;
 }
 
-.tlist2{
+.flist2{
     border-radius: 2vw;
     border: solid #04D9C3;
     margin: 1% 1%;
     width: 18%;
     margin-left: 5%;
 }
-#tag_ex2{
+#follow_ex2{
     border-radius: 0px 0px 1.85vw 1.85vw;
     border: 0;
     padding: 0;
@@ -184,14 +184,14 @@
     background-color: #04D9C3;
 }
 
-.tlist3{
+.flist3{
     border-radius: 2vw;
     border: solid #04D9C3;
     margin: 1% 1%;
     width: 18%;
     margin-left: 5%;
 }
-#tag_ex3{
+#follow_ex3{
     border-radius: 0px 0px 1.85vw 1.85vw;
     border: 0;
     padding: 0;
@@ -202,14 +202,14 @@
     background-color: #04D9C3;
 }
 
-.tlist4{
+.flist4{
     border-radius: 2vw;
     border: solid #04D9C3;
     margin: 1% 1%;
     width: 18%;
     margin-left: 5%;
 }
-#tag_ex4{
+#follow_ex4{
     border-radius: 0px 0px 1.85vw 1.85vw;
     border: 0;
     padding: 0;
@@ -220,13 +220,13 @@
     background-color: #04D9C3;
 }
 
-.tlist5{
+.flist5{
     border-radius: 2vw;
     border: solid #04D9C3;
     margin: 1% 1%;
     width: 18%;
 }
-#tag_ex5{
+#follow_ex5{
     border-radius: 0px 0px 1.85vw 1.85vw;
     border: 0;
     padding: 0;
@@ -237,32 +237,14 @@
     background-color: #04D9C3;
 }
 
-.tlist6{
-    border-radius: 2vw;
-    border: solid #04D9C3;
-    margin: 1% 1%;
-    width: 18%;
-    margin-left: 5%;
-}
-#tag_ex6{
-    border-radius: 0px 0px 1.85vw 1.85vw;
-    border: 0;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    height: 50%;
-    box-sizing: border-box;
-    background-color: #04D9C3;
-}
-
-.tlist7{
+.flist6{
     border-radius: 2vw;
     border: solid #04D9C3;
     margin: 1% 1%;
     width: 18%;
     margin-left: 5%;
 }
-#tag_ex7{
+#follow_ex6{
     border-radius: 0px 0px 1.85vw 1.85vw;
     border: 0;
     padding: 0;
@@ -273,14 +255,32 @@
     background-color: #04D9C3;
 }
 
-.tlist8{
+.flist7{
     border-radius: 2vw;
     border: solid #04D9C3;
     margin: 1% 1%;
     width: 18%;
     margin-left: 5%;
 }
-#tag_ex8{
+#follow_ex7{
+    border-radius: 0px 0px 1.85vw 1.85vw;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 50%;
+    box-sizing: border-box;
+    background-color: #04D9C3;
+}
+
+.flist8{
+    border-radius: 2vw;
+    border: solid #04D9C3;
+    margin: 1% 1%;
+    width: 18%;
+    margin-left: 5%;
+}
+#follow_ex8{
     border-radius: 0px 0px 1.85vw 1.85vw;
     border: 0;
     padding: 0;
