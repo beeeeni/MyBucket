@@ -8,45 +8,42 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <ul class="menu">
-           <li class="logo"><img src="img/myBucketLogo.png"></li>
+   <header>
+      <ul class="menu">
+         <li class="logo" onclick="location.href='main.html'"><img src="img/myBucketLogo.png"></li>
+         <li id="main-button" class="tab-button" onclick="location.href='bucket_log.html'"><strong>버킷로그</strong></li>
+         <li id="main-button" class="tab-button" onclick="location.href='community_qna.html'"><strong>커뮤니티</strong></li>
+         <li id="main-button" class="tab-button" onclick="location.href='mypage.html'"><strong>마이페이지</strong></li>
+         <li class="tab-button" onclick="location.href='create_account.html'">sign-up</li>
+         <li class="tab-button" onclick="location.href='log_in.html'">log-in</li>
   
-              <li id="main-button" class="tab-button"><strong>버킷로그</strong></li>
-              <li id="main-button" class="tab-button"><strong>커뮤니티</strong></li>
-              <li id="main-button" class="tab-button"><strong>마이페이지</strong></li>
-              <li class="tab-button">sign-up</li>
-              <li class="tab-button">log-in</li>
-  
-        </ul>
-     </header>
+      </ul>
+   </header>
 
-     <div class="left_page">
+   <div class="left_page">
+      <img src="img/community_button/qna_clicked.png" class="community_button" style="width: 80%;" onclick="location.href='community_qna.html'">
+      <img src="img/community_button/mate.png" class="community_button" style="width: 80%;" onclick="location.href='community_write.html'">
+   </div>
 
-        <img src="img/qna_clicked.png">
-        <img src="img/mate.png">
-     </div>
-
-     <div class="right_page">
-        <h2>Q&A</h2>
-        <div class="search_box">
-        <img id="searching" src="img/search.png">
-        <input class="input_box" cols="100" rows="3"class="box1" placeholder="Search"></input>
-        </div>
-        <hr class="best_list">
-        <hr class="best_list">
-        <hr class="best_list">
-        <hr class="best_list">
-        <hr class="best_list">
-        <hr class="best_list">
-        <hr class="best_list">
-        <hr class="best_list">
-        <hr class="best_list">
-        <hr class="best_list">
-        <hr class="best_list">
-        <hr class="best_list">
-        
-        <img id="write" src="./img/write.png" alt="write">
-     </div>
+   <div class="right_page">
+      <h2>Q&A</h2>
+      <div class="search_box">
+         <img id="searching" src="img/community_button/search.png">
+         <input class="input_box" cols="100" rows="3"class="box1" placeholder="Search">
+      </div>
+      <hr class="best_list">
+      <hr class="best_list">
+      <hr class="best_list">
+      <hr class="best_list">
+      <hr class="best_list">
+      <hr class="best_list">
+      <hr class="best_list">
+      <hr class="best_list">
+      <hr class="best_list">
+      <hr class="best_list">
+      <hr class="best_list">
+      <hr class="best_list">
+      <img id="write" src="img/community_button/write.png" alt="write">
+   </div>
 </body>
 </html>

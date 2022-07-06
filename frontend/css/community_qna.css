@@ -44,17 +44,21 @@ margin-top: 2%;
    margin-top: 5%;
    height: 70vh;
    margin-left:5%;
-   width:29%;
-   border-right: 2px solid #A0F1E8;
+   width:20%;
+}
+
+.community_button{
+   margin-left: 35%;
 }
 
 .right_page{
    float:right;
    margin-top: 5%;
-   margin-right: 5%;
-   height: 70vh;
+   margin-right: 10%;
+   margin-bottom: 3%;
+   height: auto;
    width: 60%;
-
+   border-left: 1px solid #117e74;
 }
 
 
