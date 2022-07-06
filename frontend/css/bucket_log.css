@@ -47,9 +47,16 @@
 .explain{
     background-color: #A0F1E8;
     width: auto;
-    height: 25vh;
+    height: 20vh;
     text-align: center;
     font-size: 1.5rem;
+    margin-top: 2%;
+    padding: 2%;
+    
+}
+.bucketlog_ex{
+    color: gray;
+    font-size: 1.2rem;
     margin-top: 2%;
 }
 /* 인기글 */
