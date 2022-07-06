@@ -2,16 +2,16 @@
    margin: 0;
    padding: 0;
 }
- 
- 
+
+
 .menu{
    margin: 0 auto;
    list-style-type: none;
    width: 100%;
    display: flex;
-   justify-content: space-around;   
+   justify-content: space-around;
 }
- 
+
 .tab-button{
    padding: 1% 0% 1% 20px;
    float:left;
@@ -21,43 +21,64 @@
    text-decoration: none;
    cursor: pointer;
 }
- 
+
 .list{
    letter-spacing: 1.5rem;
    position:absolute;
 }
- 
+
 .logo{
    margin-left: 3%;
    margin-right: 1%;
    margin-top: 2%;
 }
- 
- 
+
+
 #main-button{
    font-size: 1.5rem;
+}
+
+/* 마이페이지 탭에서 선택하는 메뉴 바 */
+.mypage_menu{
+   background-color: #94f2e9;
+   width: auto;
+   height: 10vh;
+
+   font-size: 1.5rem;
+   margin-top: 1.5%;
+   list-style-type: none;
+   display: flex;
+}
+.mymenu{
+   margin-left: 8%;
+   margin-top: 1%;
+}
+
+/* qna 글 작성 */
+h1{
+   margin-left: 17%;
+   margin-top: 2%;
 }
 
 .text-box{
    text-align: center;
    position:sticky;
-   margin-top:2%;   
+   margin-top: 2%;
 }
 
 .first-box{
-   background-color: #c6f5f0;
-   border: 0;
-   
+   background-color: white;
+   border: 2px solid #117e74;
+   border-radius: 30px;
+   margin-bottom: 1%;
+   padding: 1%;
 }
 
 .second-box{
-   background-color: #c6f5f0;
-   border:0;
-}
-
-.third-box{
-   background-color: #c6f5f0;
-   border:0;
+   background-color: white;
+   border: 2px solid #117e74;
+   border-radius: 30px;
+   padding: 1%;
 }
 
 textarea{
@@ -67,19 +88,21 @@ textarea{
 
 }
 
+.hash_btn{
+   text-align: center;
+   margin-top:1%;
+   padding: 10px;
+   margin-left: 17%;
+   margin-bottom: -2%;
+
+   display: flex;
+   justify-content: space-around;
+}
+
 .hashtag_btn{
    border:0;
    cursor: pointer;
    background-color: white;
-   margin-left: 1.5%;
-}
-
-.hash_btn{
-   text-align: center;
-   margin-top:1.5%;
-   padding: 10px;
-   border-top: 1px dashed gray;
-   border-bottom: 1px dashed gray;
 }
 
 .up_load_btn{
@@ -89,7 +112,8 @@ textarea{
    font-size: 1.5rem;
    background-color: #04D9C3;
    color: white;
-   margin-top:0.8%;
+   margin-top:1%;
+   margin-bottom: 2%;
    border-radius: 10%;
    padding: 0.4%;
    cursor: pointer;
@@ -97,28 +121,7 @@ textarea{
 
 .up_btn{
    text-align: center;
-}
-
-.bucket_menu{
-   margin: 0 auto;
-   list-style-type: none;
-   width: 100%;
-   display: flex;
-   justify-content: space-around;
-}
-
-.bucket_list_bar{
-   background-color: #04D9C3;
-   margin-top: 2%;
-   
-}
-
-.tab-button-bucket{
-   float:left;
-   margin-right:2%;
-   margin-top: 1%;
-   text-decoration: none;
-   cursor: pointer;
-   color: #f7f2f2;
-   margin-bottom: 1%;
+   margin-left: 40%;
+   width: 80%;
+   height: auto;
 }
