@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.menu{
+    margin: 0 auto;
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.tab-button{
+    padding: 1% 0% 1% 20px;
+    float:left;
+    margin-right:6%;
+    margin-top: 2%;
+    color: grey;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.list{
+    letter-spacing: 1.5rem;
+    position:absolute;
+}
+
+.logo{
+    margin-left: 3%;
+    margin-right: 1%;
+    margin-top: 2%;
+}
+
+
+#main-button{
+    font-size: 1.5rem;
+}
+
+/* 마이페이지 탭에서 선택하는 메뉴 바 */
+.mypage_menu{
+    background-color: #94f2e9;
+    width: auto;
+    height: 10vh;
+
+    font-size: 1.5rem;
+    margin-top: 1.5%;
+    list-style-type: none;
+    display: flex;
+}
+.mymenu{
+    margin-left: 8%;
+    margin-top: 1%;
+}
+
+/* 팔로잉 팔로워 수 보기 */
+.follow_count{
+    display: flex;
+    list-style-type: none;
+    margin-left: 8%;
+    margin-top: 2%;
+}
+#following{
+    display: flex;
+}
+#follower{
+    display: flex;
+    margin-left: 5%;
+}
+
+
+/* 팔로우 하는 사람의 글 카드로 미리보기 보여주기 */
+.follow_list1{
+    display: flex;
+    margin-left: 5%;
+    padding: 1.5%;
+}
+
+.follow_list2{
+    display: flex;
+    margin-left: 5%;
+    padding: 1.5%;
+}
+
+.follow_explain{
+    margin: 0 auto;
+
+    top: 0%;
+    width: 100%;
+    height: 20vh;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.follow_img{
+    display: block;
+    margin: 8% auto;
+}
+
+.follow_title{
+    text-align: center;
+    font-size: 1rem;
+    color: white;
+    margin: 5%;
+}
+
+.follow_sub{
+    text-align: center;
+    font-size: 0.8rem;
+    color: white;
+    margin: 5%;
+}
+
+.etc{
+    display: block;
+    font-size: 0;
+}
+
+.stb{
+    font-size: 0.5rem;
+    text-align: center;
+    background-color: white;
+    width: 25%;
+    border-radius: 1.5vw;
+    margin: 4%;
+    float:left
+}
+
+.hour{
+    font-size: 0.5rem;
+    color: gray;
+    float: right;
+    margin-top: 1vh;
+    margin-right: 5%;
+}
+
+.flist1{
+    border-radius: 2vw;
+    border: solid #04D9C3;
+    margin: 1% 1%;
+    width: 18%;
+}
+#follow_ex1{
+    border-radius: 0px 0px 1.85vw 1.85vw;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 20vh;
+    box-sizing: border-box;
+    background-color: #04D9C3;
+}
+
+.flist2{
+    border-radius: 2vw;
+    border: solid #04D9C3;
+    margin: 1% 1%;
+    width: 18%;
+    margin-left: 5%;
+}
+#follow_ex2{
+    border-radius: 0px 0px 1.85vw 1.85vw;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 20vh;
+    box-sizing: border-box;
+    background-color: #04D9C3;
+}
+
+.flist3{
+    border-radius: 2vw;
+    border: solid #04D9C3;
+    margin: 1% 1%;
+    width: 18%;
+    margin-left: 5%;
+}
+#follow_ex3{
+    border-radius: 0px 0px 1.85vw 1.85vw;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 20vh;
+    box-sizing: border-box;
+    background-color: #04D9C3;
+}
+
+.flist4{
+    border-radius: 2vw;
+    border: solid #04D9C3;
+    margin: 1% 1%;
+    width: 18%;
+    margin-left: 5%;
+}
+#follow_ex4{
+    border-radius: 0px 0px 1.85vw 1.85vw;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 20vh;
+    box-sizing: border-box;
+    background-color: #04D9C3;
+}
+
+.flist5{
+    border-radius: 2vw;
+    border: solid #04D9C3;
+    margin: 1% 1%;
+    width: 18%;
+}
+#follow_ex5{
+    border-radius: 0px 0px 1.85vw 1.85vw;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 20vh;
+    box-sizing: border-box;
+    background-color: #04D9C3;
+}
+
+.flist6{
+    border-radius: 2vw;
+    border: solid #04D9C3;
+    margin: 1% 1%;
+    width: 18%;
+    margin-left: 5%;
+}
+#follow_ex6{
+    border-radius: 0px 0px 1.85vw 1.85vw;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 20vh;
+    box-sizing: border-box;
+    background-color: #04D9C3;
+}
+
+.flist7{
+    border-radius: 2vw;
+    border: solid #04D9C3;
+    margin: 1% 1%;
+    width: 18%;
+    margin-left: 5%;
+}
+#follow_ex7{
+    border-radius: 0px 0px 1.85vw 1.85vw;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 20vh;
+    box-sizing: border-box;
+    background-color: #04D9C3;
+}
+
+.flist8{
+    border-radius: 2vw;
+    border: solid #04D9C3;
+    margin: 1% 1%;
+    width: 18%;
+    margin-left: 5%;
+}
+
+#follow_ex8{
+    border-radius: 0px 0px 1.85vw 1.85vw;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 20vh;
+    box-sizing: border-box;
+    background-color: #04D9C3;
+}
+
