@@ -25,7 +25,7 @@ def postcreate(request):
 def detail(request, post_id):
     post_detail = get_object_or_404(Post, pk=post_id)
     comment_form = CommentForm()
-    return render(request, 'postdetail.html', {'post_detail':post_detail}, {'comment_form':comment_form})
+    return render(request, 'detail.html', {'post_detail':post_detail}, {'comment_form':comment_form})
 
 # 댓글 저장
 def new_comment(request, post_id):
@@ -34,4 +34,4 @@ def new_comment(request, post_id):
         finished_form = filled_form.save(commit=False)
         finished_form.post = get_object_or_404(Post, pk=post_id)
         finished_form.save()
-    return redirect('postdetail.html', post_id)
+    return redirect('detail.html', post_id)
