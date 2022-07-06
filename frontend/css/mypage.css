@@ -1,4 +1,307 @@
 *{
+<<<<<<< HEAD
+    margin: 0;
+    padding: 0;
+ }
+  
+  
+ .menu{
+    margin: 0 auto;
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;   
+ }
+  
+ .tab-button{
+    padding: 1% 0% 1% 20px;
+    float:left;
+    margin-right:6%;
+    margin-top: 2%;
+    color: grey;
+    text-decoration: none;
+    cursor: pointer;
+ }
+  
+ .list{
+    letter-spacing: 1.5rem;
+    position:absolute;
+ }
+  
+ .logo{
+    margin-left: 3%;
+    margin-right: 1%;
+    margin-top: 2%;
+ }
+  
+  
+ #main-button{
+    font-size: 1.5rem;
+ }
+ 
+ .text-box{
+    text-align: center;
+    position:sticky;
+    margin-top:2%;   
+ }
+ 
+ .first-box{
+    background-color: #c6f5f0;
+    border: 0;
+    
+ }
+ 
+ .second-box{
+    background-color: #c6f5f0;
+    border:0;
+ }
+ 
+ .third-box{
+    background-color: #c6f5f0;
+    border:0;
+ }
+ 
+ textarea{
+    border: none;
+    resize: none;
+    font-size: 1.1rem;
+ 
+ }
+ 
+ .hashtag_btn{
+    border:0;
+    cursor: pointer;
+    background-color: white;
+    margin-left: 1.5%;
+ }
+ 
+ .hash_btn{
+    text-align: center;
+    margin-top:1.5%;
+    padding: 10px;
+    border-top: 1px dashed gray;
+    border-bottom: 1px dashed gray;
+ }
+ 
+ .up_load_btn{
+    border: 0;
+    width: 8%;
+ 
+    font-size: 1.5rem;
+    background-color: #04D9C3;
+    color: white;
+    margin-top:0.8%;
+    border-radius: 10%;
+    padding: 0.4%;
+    cursor: pointer;
+ }
+ 
+ .up_btn{
+    text-align: center;
+ }
+ 
+ .bucket_menu{
+    margin: 0 auto;
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+ }
+ 
+ .bucket_list_bar{
+    background-color: #04D9C3;
+    margin-top: 2%;
+    
+ }
+ 
+ .tab-button-bucket{
+    float:left;
+    margin-right:2%;
+    margin-top: 1%;
+    text-decoration: none;
+    cursor: pointer;
+    color: #f7f2f2;
+    margin-bottom: 1%;
+ }
+
+ .plus_btn{
+  margin-top:1%;
+ }
+ .bucket_text{
+  margin-left:-5%;
+
+ }
+ .my{
+   float:left;
+   
+ }
+ .tag_list{
+   margin-top:-2%;
+ }
+
+ .my_log{
+   margin-left:7%;
+ }
+
+ .bucket_list{
+   box-sizing: border-box;
+   padding: 3%;
+   border-bottom: 1px solid black;
+   font-size: 1.5rem;
+   width:60%;
+   margin-left:20%;
+   margin-bottom:-3%;
+   font-size: 2rem;
+}
+
+.my_log{
+   font-size: 2rem;
+}
+.my_bucket_log{
+   box-sizing: border-box;
+   padding: 5%;
+  
+   font-size: 1.5rem;
+   width:80%;
+   margin-left:10%;
+}
+
+.tag_list{
+   display: flex;
+   margin-left: 5%;
+   padding: 1.5%;
+}
+
+.tag_explain{
+   margin: 0 auto;
+
+   top: 0%;
+   width: 100%;
+   height: 20vh;
+   margin: 0;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+}
+
+.tag_img{
+   display: block;
+   margin: 8% auto;
+}
+
+.tag_title{
+   text-align: center;
+   font-size: 1rem;
+   color: white;
+   margin: 5%;
+}
+
+.tag_sub{
+   text-align: center;
+   font-size: 0.8rem;
+   color: white;
+   margin: 5%;
+}
+
+.etc{
+   display: block;
+   font-size: 0;
+}
+
+.stb{
+   font-size: 0.5rem;
+   text-align: center;
+   background-color: white;
+   width: 25%;
+   border-radius: 1.5vw;
+   margin: 4%;
+   float:left
+}
+
+.hour{
+   font-size: 0.5rem;
+   color: gray;
+   float: right;
+   margin-top: 1vh;
+   margin-right: 5%;
+}
+
+.tlist1{
+   border-radius: 2vw;
+   border: solid #04D9C3;
+   margin: 1% 1%;
+   width: 18%;
+}
+
+#tag_ex1{
+   border-radius: 0px 0px 1.85vw 1.85vw;
+   border: 0;
+   padding: 0;
+   margin: 0;
+   width: 100%;
+   height: 20vh;
+   box-sizing: border-box;
+   background-color: #04D9C3;
+}
+
+.tlist2{
+   border-radius: 2vw;
+   border: solid #04D9C3;
+   margin: 1% 1%;
+   width: 18%;
+   margin-left: 5%;
+}
+
+#tag_ex2{
+   border-radius: 0px 0px 1.85vw 1.85vw;
+   border: 0;
+   padding: 0;
+   margin: 0;
+   width: 100%;
+   height: 20vh;
+   box-sizing: border-box;
+   background-color: #04D9C3;
+}
+
+.tlist3{
+   border-radius: 2vw;
+   border: solid #04D9C3;
+   margin: 1% 1%;
+   width: 18%;
+   margin-left: 5%;
+}
+
+#tag_ex3{
+   border-radius: 0px 0px 1.85vw 1.85vw;
+   border: 0;
+   padding: 0;
+   margin: 0;
+   width: 100%;
+   height: 20vh;
+   box-sizing: border-box;
+   background-color: #04D9C3;
+}
+
+.tlist4{
+   border-radius: 2vw;
+   border: solid #04D9C3;
+   margin: 1% 1%;
+   width: 18%;
+   margin-left: 5%;
+}
+
+#tag_ex4{
+   border-radius: 0px 0px 1.85vw 1.85vw;
+   border: 0;
+   padding: 0;
+   margin: 0;
+   width: 100%;
+   height: 20vh;
+   box-sizing: border-box;
+   background-color: #04D9C3;
+}
+ 
+=======
    margin: 0;
    padding: 0;
 }
@@ -122,3 +425,4 @@ textarea{
    color: #f7f2f2;
    margin-bottom: 1%;
 }
+>>>>>>> 228c835a43653aef7cb64a467748d5b70700241f
