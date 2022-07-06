@@ -1,85 +1,102 @@
 *{
-    margin: 0;
-    padding: 0;
- }
- 
- 
- .menu{
-    margin: 0 auto;
-    list-style-type: none;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
- }
- 
- .tab-button{
-    padding: 1% 0% 1% 20px;
-    float:left;
-    margin-right:6%;
-    margin-top: 2%;
-    color: grey;
-    text-decoration: none;
-    cursor: pointer;
- }
- 
- .list{
-    letter-spacing: 1.5rem;
-    position:absolute;
- }
- 
- .logo{
-   margin-left: 3%;
-   margin-right: 1%;
+   margin: 0;
+   padding: 0;
+}
+
+
+.menu{
+   margin: 0 auto;
+   list-style-type: none;
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+}
+
+.tab-button{
+   padding: 1% 0% 1% 20px;
+   float:left;
+   margin-right:6%;
    margin-top: 2%;
- }
- 
- 
- #main-button{
-    font-size: 1.5rem;
- }
+   color: grey;
+   text-decoration: none;
+   cursor: pointer;
+}
 
- .info_enter{
-    text-align: center;
-    margin-top: 6%;
- }
+.list{
+   letter-spacing: 1.5rem;
+   position:absolute;
+}
 
- .enter_text{
-    font-size: 2rem;
-    margin-bottom: 1%;
- }
+.logo{
+margin-left: 3%;
+margin-right: 1%;
+margin-top: 2%;
+}
 
- .input_text{
-    margin-left:-36.5%;
-    margin-bottom: -1%;
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: grey;
- }
- .input_text1{
-    margin-left:-32%;
-    margin-bottom: -1%;
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: grey;
- }
 
- .input_text2{
-    margin-left:-35%;
-    margin-bottom: -1%;
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: grey;
- }
+#main-button{
+   font-size: 1.5rem;
+}
 
- .change_btn{
-    border:0;
-    cursor:pointer;
-    border-radius:10px;
-    width: 40%;
-    height: 20%;
-    font-size:2rem;
-    background-color: #04D9C3;
-    color: white;
-    margin-top:1%;
-    padding: 0.5%;
- }
+/* 마이페이지 탭에서 선택하는 메뉴 바 */
+.mypage_menu{
+   background-color: #94f2e9;
+   width: auto;
+   height: 10vh;
+
+   font-size: 1.5rem;
+   margin-top: 1.5%;
+   list-style-type: none;
+   display: flex;
+}
+.mymenu{
+   margin-left: 8%;
+   margin-top: 1%;
+}
+
+/* 회원정보 입력 창 */
+.info_enter{
+   text-align: center;
+   margin-top: 3%;
+}
+
+.enter_text{
+   font-size: 2rem;
+   margin-bottom: 1%;
+}
+
+.input_text{
+   margin-left:-36.5%;
+   margin-bottom: -1%;
+   font-size: 1.2rem;
+   font-weight: 600;
+   color: grey;
+}
+.input_text1{
+   margin-left:-32%;
+   margin-bottom: -1%;
+   font-size: 1.2rem;
+   font-weight: 600;
+   color: grey;
+}
+
+.input_text2{
+   margin-left:-35%;
+   margin-bottom: -1%;
+   font-size: 1.2rem;
+   font-weight: 600;
+   color: grey;
+}
+
+.change_btn{
+   border:0;
+   cursor:pointer;
+   border-radius:10px;
+   width: 40%;
+   height: 20%;
+   font-size:2rem;
+   background-color: #04D9C3;
+   color: white;
+   margin-top:1%;
+   padding: 0.5%;
+}
