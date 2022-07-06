@@ -45,7 +45,7 @@
 /* 버킷로그페이지 */
 /* 버킷로그란? */
 .explain{
-    background-color: #94f2e9;
+    background-color: #A0F1E8;
     width: auto;
     height: 25vh;
     text-align: center;
@@ -56,14 +56,16 @@
 h2{
     margin-left: 3%;
     margin-top: 1.5%;
-    border-bottom: 0.05em solid #117e74;
     width: 93%
 }
+
 .best_list{
+    width: 93%;
+    height: 1px;
     margin-left: 3%;
-    margin-top: 0.5%;
-    border-bottom: 0.05em solid rgba(17, 126, 115, 0.845);
-    width: 93%
+    margin-top: 1.5%;
+    background: #117e74;
+    border: 0;
 }
 /* 태그 버튼 */
 .tag{

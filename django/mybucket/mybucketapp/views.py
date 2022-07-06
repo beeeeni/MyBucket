@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect, get_object_or_404
-from .forms import PostForm
+from .forms import PostForm, CommentForm
 from .models import Post
 
 # Create your views here.
@@ -26,3 +26,12 @@ def detail(request, post_id):
     post_detail = get_object_or_404(Post, pk=post_id)
     comment_form = CommentForm()
     return render(request, 'postdetail.html', {'post_detail':post_detail}, {'comment_form':comment_form})
+
+# 댓글 저장
+def new_comment(request, post_id):
+    filled_form = CommentForm(request.POST)
+    if filled_form.is_valid():
+        finished_form = filled_form.save(commit=False)
+        finished_form.post = get_object_or_404(Post, pk=post_id)
+        finished_form.save()
+    return redirect('postdetail.html', post_id)

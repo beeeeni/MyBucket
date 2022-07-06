@@ -1,3 +1,5 @@
+{% block content %}
+
 <h1>{{ post_detail.title }}</h1>
 
 <h4>작성 일시: {{ post_detail.date }}</h4>
@@ -5,4 +7,10 @@
 <p>{{ post_detail.body }}</p>
 
 <h4>댓글</h4>
-{{ comment_form }}
+<form method="POST" action="{% url 'new_comment' post_detail.id %}">
+    {% csrf_token %}
+    {{ comment_form }}
+    <input type="submit" value="댓글 작성하기">
+</form>
+
+{% endblock %}
