@@ -1,0 +1,154 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css\show_following1.css' %}">
+    <title>show_following</title>
+</head>
+<body>
+    <header>
+        <ul class="menu">
+            <li class="logo">
+                <a href="http://127.0.0.1:8000/"> 
+                    <img src="{% static 'img/myBucketLogo.png' %}">
+                </a>
+            </li>
+            <li id="main-button" type="button" class="tab-button" onclick="location.href='{% url "bucket_log" %}'"><img src="{% static 'img\main_menu\bucketlog_line.png' %}" style="width:100%; height: 6vh;"></li>
+            <li id="main-button" type="button" class="tab-button" onclick="location.href='{% url "chome" %}'"><img src="{% static 'img\main_menu\community_line.png' %}" style="width:100%; height: 6vh;"></li>
+            <li id="main-button" type="button" class="tab-button" onclick="location.href='{% url "mypage" %}'"><img src="{% static 'img\main_menu\mypage_line.png' %}" style="width:100%; height: 6vh;"></li>
+            <li class="tab-button">sign-up</li>
+            <li class="tab-button">log-in</li>
+  
+        </ul>
+    </header>
+
+    <!--마이페이지 탭에서 선택하는 메뉴 바-->
+    <ul class="mypage_menu">
+        <li id="mymenu_mybucket" type="button" class="mymenu" onclick="location.href='{% url "mypage" %}'"><img src="{% static 'img\mymenu_button\mymenu_mybucket.png' %}" style="width:100%; height: 6vh;"></li>
+        <li id="mymenu_follow" type="button" class="mymenu" onclick="location.href='{% url "show_following1" %}'"><img src="{% static 'img\mymenu_button\mymenu_follow_gray.png' %}" style="width:100%; height: 6vh;"></li>
+        <li id="mymenu_scrap" type="button" class="mymenu" onclick="location.href='{% url "scrap" %}'"><img src="{% static 'img\mymenu_button\mymenu_scrap.png' %}" style="width:100%; height: 6vh;"></li>
+        <li id="mymenu_write" type="button" class="mymenu" onclick="location.href='{% url "mywriting" %}'"><img src="{% static 'img\mymenu_button\mymenu_write.png' %}" style="width:100%; height: 6vh;"></li>
+        <li id="mymenu_info" type="button" class="mymenu" onclick="location.href='{% url "change_info" %}'"><img src="{% static 'img\mymenu_button\mymenu_info.png' %}" style="width:100%; height: 6vh;"></li>
+    </ul>
+
+    <!--팔로잉 팔로워 수 보기-->
+    <ul class="follow_count"> <!--&nbsp;는 띄어쓰기 문자-->
+        <li id="following" class="Fcount" onclick="location.href='show_following2.html'"><h2>Following&nbsp;&nbsp;|&nbsp;&nbsp;1423</h2></li>
+        <li id="follower" class="Fcount" onclick="location.href='#'"><h2>Follower&nbsp;&nbsp;|&nbsp;&nbsp;1432</h2></li>
+    </ul>
+
+    <!--팔로우 하는 사람의 글 카드로 미리보기 보여주기-->
+    <div class="follow_list1">
+        <div class="flist1">
+            <img src="{% static 'img\mymenu_following\following_1.png' %}" alt="1" class="follow_img" style="width:auto; height:20vh;">
+            <div class="follow_explain">
+                <div id="follow_ex1">
+                    <div class="follow_title">feel my bucket!</div>
+                    <div class="follow_sub">hi every one<br>i was djejwkldkfeljfkd!<br>it wasld l dkfkjdlkdsjf ❤️</div>
+                    <div class="etc">
+                        <p class="stb">#Travel</p>
+                        <p class="hour">1 hour ago</p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div class="flist2">
+            <img src="{% static 'img\mymenu_following\following_2.png' %}" alt="1" class="follow_img" style="width:auto; height:20vh;">
+            <div class="follow_explain">
+                <div id="follow_ex2">
+                    <div class="follow_title">feel my bucket!</div>
+                    <div class="follow_sub">hi every one<br>i was djejwkldkfeljfkd!<br>it wasld l dkfkjdlkdsjf ❤️</div>
+                    <div class="etc">
+                        <p class="stb">#Travel</p>
+                        <p class="hour">1 hour ago</p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div class="flist3">
+            <img src="{% static 'img\mymenu_following\following_3.png' %}" alt="1" class="follow_img" style="width:auto; height:20vh;">
+            <div class="follow_explain">
+                <div id="follow_ex3">
+                    <div class="follow_title">feel my bucket!</div>
+                    <div class="follow_sub">hi every one<br>i was djejwkldkfeljfkd!<br>it wasld l dkfkjdlkdsjf ❤️</div>
+                    <div class="etc">
+                        <p class="stb">#Travel</p>
+                        <p class="hour">1 hour ago</p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div class="flist4">
+            <img src="{% static 'img\mymenu_following\following_4.png' %}" alt="1" class="follow_img" style="width:auto; height:20vh;">
+            <div class="follow_explain">
+                <div id="follow_ex1">
+                    <div class="follow_title">feel my bucket!</div>
+                    <div class="follow_sub">hi every one<br>i was djejwkldkfeljfkd!<br>it wasld l dkfkjdlkdsjf ❤️</div>
+                    <div class="etc">
+                        <p class="stb">#Travel</p>
+                        <p class="hour">1 hour ago</p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <div class="follow_list2">
+        <div class="flist5">
+            <img src="{% static 'img\mymenu_following\following_5.png' %}" alt="1" class="follow_img" style="width:auto; height:20vh;">
+            <div class="follow_explain">
+                <div id="follow_ex1">
+                    <div class="follow_title">feel my bucket!</div>
+                    <div class="follow_sub">hi every one<br>i was djejwkldkfeljfkd!<br>it wasld l dkfkjdlkdsjf ❤️</div>
+                    <div class="etc">
+                        <p class="stb">#Travel</p>
+                        <p class="hour">1 hour ago</p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div class="flist6">
+            <img src="{% static 'img\mymenu_following\following_6.png' %}" alt="1" class="follow_img" style="width:auto; height:20vh;">
+            <div class="follow_explain">
+                <div id="follow_ex2">
+                    <div class="follow_title">feel my bucket!</div>
+                    <div class="follow_sub">hi every one<br>i was djejwkldkfeljfkd!<br>it wasld l dkfkjdlkdsjf ❤️</div>
+                    <div class="etc">
+                        <p class="stb">#Travel</p>
+                        <p class="hour">1 hour ago</p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div class="flist7">
+            <img src="{% static 'img\mymenu_following\following_7.png' %}" class="follow_img" style="width:auto; height:20vh;">
+            <div class="follow_explain">
+                <div id="follow_ex3">
+                    <div class="follow_title">feel my bucket!</div>
+                    <div class="follow_sub">hi every one<br>i was djejwkldkfeljfkd!<br>it wasld l dkfkjdlkdsjf ❤️</div>
+                    <div class="etc">
+                        <p class="stb">#Travel</p>
+                        <p class="hour">1 hour ago</p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div class="flist8">
+            <img src="{% static 'img\mymenu_following\following_8.png' %}" alt="1" class="follow_img" style="width:auto; height:20vh;">
+            <div class="follow_explain">
+                <div id="follow_ex4">
+                    <div class="follow_title">feel my bucket!</div>
+                    <div class="follow_sub">hi every one<br>i was djejwkldkfeljfkd!<br>it wasld l dkfkjdlkdsjf ❤️</div>
+                    <div class="etc">
+                        <p class="stb">#Travel</p>
+                        <p class="hour">1 hour ago</p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+</body>
+</html>

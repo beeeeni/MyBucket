@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+ }
+ 
+ 
+ .menu{
+    margin: 0 auto;
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+ }
+ 
+ .tab-button{
+    padding: 1% 0% 1% 20px;
+    float:left;
+    margin-right:6%;
+    margin-top: 2%;
+    color: grey;
+    text-decoration: none;
+    cursor: pointer;
+ }
+ 
+ .list{
+    letter-spacing: 1.5rem;
+    position:absolute;
+ }
+ 
+ .logo{
+   margin-left: 3%;
+   margin-right: 1%;
+   margin-top: 2%;
+ }
+ 
+ 
+ #main-button{
+    font-size: 1.5rem;
+ }
+
+ .enter_text{
+  
+    font-size: 2.5rem;
+    margin-top:0.5%;
+   
+   
+ }
+
+ .info_enter{
+    margin-top: 6%;
+    font-size:1.6rem;
+    text-align:right;
+    margin-right: 25%;
+    color: grey;
+    margin-bottom: 1%;
+   
+ }
+
+ .change_btn{
+    text-align: center;
+    border:0;
+    cursor:pointer;
+    border-radius:10px;
+    width: 40%;
+    height: 20%;
+    font-size:2rem;
+    background-color: #04D9C3;
+    color: white;
+    margin-top:1.5%;
+    padding: 0.5%;
+ }
+
+ .btn{
+    text-align: center;
+ }
+
+

@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.menu{
+    margin: 0 auto;
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.tab-button{
+    padding: 1% 0% 1% 20px;
+    float:left;
+    margin-right:6%;
+    margin-top: 2%;
+    color: grey;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.list{
+    letter-spacing: 1.5rem;
+    position:absolute;
+}
+
+.logo{
+    margin-left: 3%;
+    margin-right: 1%;
+    margin-top: 2%;
+}
+
+
+#main-button{
+    font-size: 1.5rem;
+}
+
+.log_in{
+    text-align: center;
+}
+
+.log_in_box{
+    margin-top: 10%;
+}
+.log_in{
+    font-size:4rem;
+    color:grey;
+}
+
+.id_pw{
+    text-align:center;
+    font-size:20px;
+    margin-top:4%;
+}
+
+.id_word{
+    margin-bottom:1%;
+    font-size:2rem;
+}
+
+.pw_word{
+    font-size:2rem;
+}
+
+.log_in_button{
+    margin-top: 3%;
+    border:0;
+    cursor:pointer;
+    border-radius:10px;
+    width: 30%;
+    height: 10%;
+    font-size:165%;
+    background-color: #04D9C3;
+    color: white;
+}
+
+.sign_up_button{
+    margin-left:24%;
+    margin-top:2%;
+    border:0;
+    width:5%;
+    height:10%;
+    background-color: #04D9C3;
+    border-radius:10px;
+    color: white;
+    cursor:pointer;
+}

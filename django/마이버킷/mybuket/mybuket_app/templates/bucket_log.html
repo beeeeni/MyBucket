@@ -1,0 +1,136 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css\bucket_log.css' %}">
+
+    <title>My Bucket</title>
+</head>
+<body>
+    <header>
+        <ul class="menu">
+            <li class="logo">
+                <a href="http://127.0.0.1:8000/"> 
+                    <img src="{% static 'img/myBucketLogo.png' %}">
+                </a>
+            </li>
+
+            <li id="main-button" type="button" class="tab-button" onclick="location.href='{% url "bucket_log" %}'"><img src="{% static 'img\main_menu\bucketlog_line.png' %}" style="width:100%; height: 6vh;"></li>
+            <li id="main-button" type="button" class="tab-button" onclick="location.href='{% url "chome" %}'"><img src="{% static 'img\main_menu\community_line.png' %}" style="width:100%; height: 6vh;"></li>
+            <li id="main-button" type="button" class="tab-button" onclick="location.href='{% url "mypage" %}'"><img src="{% static 'img\main_menu\mypage_line.png' %}" style="width:100%; height: 6vh;"></li>
+            {% if user.is_authenticated %}
+            <!-- if request를 보낸 사용자가 로그인이 된 사용자라면  -->
+            <li class="tab-button">{{ user.first_name }}님, 환영합니다 !</li>
+            <li class="tab-button">
+                <a href="{% url 'logout' %}">log-out</a>
+            </li>
+
+            {% else %}
+
+            <li class="tab-button"> 
+                <a href="{% url 'create_account' %}">sign-up</a>
+            </li>
+            <li class="tab-button">
+                <a href="{% url 'login' %}">log-in</a>
+            </li>
+            {% endif %}
+  
+        </ul>
+</header>
+    
+    <!--버킷로그 페이지-->
+    <div class="explain">버킷로그란?</div>
+    <h2>인기글</h2>
+    <hr class="best_list">
+    <hr class="best_list">
+    <hr class="best_list">
+    <hr class="best_list">
+    <hr class="best_list">
+
+    <!--태그 선택-->
+    <div class="tag">
+        <div id="adventure" class="tag-button">
+            <img src="{% static 'img\bucketlog_hashtag\hashtag_adventure_on.png' %}" style="width:80%; height:auto;">
+        </div>
+
+        <div id="travel" class="tag-button">
+            <img src="{% static 'img\bucketlog_hashtag\hashtag_travel_on.png' %}" style="width:80%; height:auto;">
+        </div>
+
+        <div id="enjoy" class="tag-button">
+            <img src="{% static 'img\bucketlog_hashtag\hashtag_enjoy_on.png' %}" style="width:80%; height:auto;">
+        </div>
+
+        <div id="challenge" class="tag-button">
+            <img src="{% static 'img\bucketlog_hashtag\hashtag_challenge_on.png' %}" style="width:80%; height:auto;">
+        </div>
+
+        <div id="selfimprove" class="tag-button">
+            <img src="{% static 'img\bucketlog_hashtag\hashtag_self_on.png' %}" style="width:80%; height:auto;">
+        </div>
+
+        <div id="creative" class="tag-button">
+            <img src="{% static 'img\bucketlog_hashtag\hashtag_creative_on.png' %}" style="width:80%; height:auto;">
+        </div>
+    </div>
+    <!--해당 태그 글 목록-->
+    <div class="tag_list">
+        <div class="tlist1">
+            <img src="{% static 'img\bucketlog_tagimg\bucketlog_1.png' %}" alt="1" class="tag_img" style="width:auto; height:20vh;">
+            <div class="tag_explain">
+                <div id="tag_ex1">
+                    <div class="tag_title">feel my bucket!</div>
+                    <div class="tag_sub">hi every one<br>i was djejwkldkfeljfkd!<br>it wasld l dkfkjdlkdsjf ❤️</div>
+                    <div class="etc">
+                        <p class="stb">#Travel</p>
+                        <p class="hour">1 hour ago</p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div class="tlist2">
+            <img src="{% static 'img\bucketlog_tagimg\bucketlog_2.png' %}" alt="1" class="tag_img" style="width:auto; height:20vh;">
+            <div class="tag_explain">
+                <div id="tag_ex2">
+                    <div class="tag_title">feel my bucket!</div>
+                    <div class="tag_sub">hi every one<br>i was djejwkldkfeljfkd!<br>it wasld l dkfkjdlkdsjf ❤️</div>
+                    <div class="etc">
+                        <div class="stb">#Travel</div>
+                        <div class="hour">1 hour ago</div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div class="tlist3">
+            <img src="{% static 'img\bucketlog_tagimg\bucketlog_3.png' %}" alt="1" class="tag_img" style="width:auto; height:20vh;">
+            <div class="tag_explain">
+                <div id="tag_ex3">
+                    <div class="tag_title">feel my bucket!</div>
+                    <div class="tag_sub">hi every one<br>i was djejwkldkfeljfkd!<br>it wasld l dkfkjdlkdsjf ❤️</div>
+                    <div class="etc">
+                        <p class="stb">#Travel</p>
+                        <p class="hour">1 hour ago</p>
+                    </div>
+                </div>
+            </div> 
+        </div>  
+        <div class="tlist4">
+            <img src="{% static 'img\bucketlog_tagimg\bucketlog_4.png' %}" alt="1" class="tag_img" style="width:auto; height:20vh;">
+            <div class="tag_explain">
+                <div id="tag_ex4">
+                    <div class="tag_title">feel my bucket!</div>
+                    <div class="tag_sub">hi every one<br>i was djejwkldkfeljfkd!<br>it wasld l dkfkjdlkdsjf ❤️</div>
+                    <div class="etc">
+                        <p class="stb">#Travel</p>
+                        <p class="hour">1 hour ago</p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+</body>
+</html>

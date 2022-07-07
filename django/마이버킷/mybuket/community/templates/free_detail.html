@@ -1,0 +1,78 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/mate_detail.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <ul class="menu">
+            <li class="logo">
+                <a href="http://127.0.0.1:8000/"> 
+                    <img src="{% static 'img/myBucketLogo.png' %}">
+                </a>
+            </li>
+        <li id="main-button" type="button" class="tab-button" onclick="location.href='{% url "bucket_log" %}'"><img src="{% static 'img\main_menu\bucketlog_line.png' %}" style="width:100%; height: 6vh;"></li>
+            <li id="main-button" type="button" class="tab-button" onclick="location.href='{% url "chome" %}'"><img src="{% static 'img\main_menu\community_line.png' %}" style="width:100%; height: 6vh;"></li>
+            <li id="main-button" type="button" class="tab-button" onclick="location.href='{% url "mypage" %}'"><img src="{% static 'img\main_menu\mypage_line.png' %}" style="width:100%; height: 6vh;"></li>
+            {% if user.is_authenticated %}
+            <!-- if request를 보낸 사용자가 로그인이 된 사용자라면  -->
+            <li class="tab-button">{{ user.first_name }}님, 환영합니다 !</li>
+            <li class="tab-button">
+                <a href="{% url 'logout' %}">log-out</a>
+            </li>
+
+            {% else %}
+
+            <li class="tab-button"> 
+                <a href="{% url 'create_account' %}">sign-up</a>
+            </li>
+            <li class="tab-button">
+                <a href="{% url 'login' %}">log-in</a>
+            </li>
+            {% endif %}
+  
+        </ul>
+ 
+         </ul>
+      </header>
+   
+    <div class="left_page">
+        <a href="{% url 'chome' %}"><img src="{% static 'img/community_button/qna.png' %}" class="community_button" style="width: 80%;"></a>
+        <a href="{% url 'freehome' %}"><img src="{% static 'img/community_button/mate_clicked.png' %}" class="community_button" style="width: 80%;"></a>
+     </div>
+  
+    <div class="right_page">
+        <div class="title"><h2>{{ post_detail.title }}</h2></div>
+        <div class="post_info">{{ post_detail.date}}
+            <div class="user">{{ post_detail.author.username}}</div>
+        </div>
+        
+        <div class="post_content">{{ post_detail.body }}</div>
+        {% for comment in post_detail.comment_set.all %}
+        <div class="post_comment">{{ comment.date}} {{ comment }}</div>
+        {% endfor %}
+        <div class="hash_btn">
+            <div class="hashtag_btn"><img src="{% static 'img/bucketlog_hashtag/hashtag_adventure_off.png' %}" style="width: 80%;"></div>
+            <div class="hashtag_btn"><img src="{% static 'img/bucketlog_hashtag/hashtag_travel_off.png' %}" style="width: 80%;"></div>
+            <div class="hashtag_btn"><img src="{% static 'img/bucketlog_hashtag/hashtag_enjoy_off.png' %}" style="width: 80%;"></div>
+            <div class="hashtag_btn"><img src="{% static 'img/bucketlog_hashtag/hashtag_challenge_off.png' %}" style="width: 80%;"></div>
+            <div class="hashtag_btn"><img src="{% static 'img/bucketlog_hashtag/hashtag_self_off.png' %}" style="width: 80%;"></div>
+            <div class="hashtag_btn"><img src="{% static 'img/bucketlog_hashtag/hashtag_creative_off.png' %}" style="width: 80%;"></div>
+         </div>
+      
+        <!-- 댓글 입력 공간 -->
+        <form method="POST" action="{% url 'new_freecomment' post_detail.id  %}">
+            {% csrf_token %}
+        <div class="comment_input">
+            {{ comment_form }}
+            <input type="submit" class="comment_btn" value="입력">
+        </div>
+    </div>
+</body>
+</html>
